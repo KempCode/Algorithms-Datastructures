@@ -52,3 +52,49 @@ vector<int> twoNumberSum(vector<int> array, int targetSum) {
 }
 
 
+
+
+
+//O(nlogn) time and O(1) space
+// O(n) is better - my solution 2 is best.
+
+// obviously sort array first,
+// left pointer to the 1st number, right pointer to the end number
+//is L + R == answer ??
+    // if we want smaller sum move right left,
+    //if we want larger sum move left right.
+#include <vector>
+using namespace std;
+
+vector<int> twoNumberSum(vector<int> array, int targetSum) {
+  //sort vector...
+  sort(array.begin(), array.end());
+  // Write your code here
+  // initialise initial positions outside of the loop...
+  int leftPos = 0;
+  int rightPos = array.size()-1;
+ 
+
+  for(int i = 0; i < array.size(); i++){
+    //start of loop always update left and right with their positions.
+    int left = array[leftPos];
+    int right = array[rightPos];
+    
+    if (left + right == targetSum){
+      return vector<int>{left, right};
+    }
+    else if(left + right > targetSum){
+      // if we want smaller sum move right left,
+      // update the position
+      rightPos -= 1;
+
+    }else{
+      // We want a larger sum. move left right.
+      leftPos += 1;
+
+    }
+    
+  }
+  // If no such pair is found, return an empty vector
+  return vector<int>{};
+}
