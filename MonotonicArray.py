@@ -34,7 +34,7 @@ def isMonotonic(array):
     
 # Second Solution
 #O(n) time and O(1) space
-#Read hint 3 for this.
+#Read hint 3 for this....
 
 def isMonotonic(array):
     # Edge cases of empty array and single digit
