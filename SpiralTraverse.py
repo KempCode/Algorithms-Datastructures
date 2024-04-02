@@ -1,3 +1,4 @@
+#O(N) time O(N) space due to storing every item in array...
 def spiralTraverse(array):
     # Write your code here.
     print("Vertical length",len(array))
@@ -10,6 +11,7 @@ def spiralTraverse(array):
     end_row = len(array) - 1
     start_col = 0 
     end_col = len(array[0]) - 1
+    # The above are -1 because we don't want to double count the corner numbers
 
     output_array = []
     
