@@ -33,7 +33,7 @@ def isMonotonic(array):
   
     
 # Second Solution
-#O(n) time and O(1) space
+#O(n) time and O(1) space.
 #Read hint 3 for this....
 
 def isMonotonic(array):
