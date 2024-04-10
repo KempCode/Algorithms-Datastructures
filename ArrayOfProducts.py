@@ -20,7 +20,7 @@ def arrayOfProducts(array):
             
 
 # Second the optimal complexity solution
-# time complexity is O(3N) space complexity is O(N)
+# time complexity is O(3N) space complexity is O(3N) - 3 arrays
 def arrayOfProducts(array):
     # at pos i in left array, the value is all product of all values to left of pos i in original array
     left_array = [1 for _ in range(len(array))]
