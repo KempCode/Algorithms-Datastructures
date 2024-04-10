@@ -9,6 +9,7 @@ class LinkedList:
 def removeDuplicatesFromLinkedList(linkedList):
     # Write your code here.
     current_item = linkedList # not linkedList.value, it should be equal to the node and can access 2 properties
+    # Remember this finishes one shy of the final LL item
     while(current_item is not None and current_item.next is not None):
         next_node = current_item.next
         
