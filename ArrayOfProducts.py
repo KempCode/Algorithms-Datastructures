@@ -47,7 +47,7 @@ def arrayOfProducts(array):
     return products
 
 
-# Even better solution saving on time complexity
+# Even better solution saving on space complexity
 # time complexity is O(3N) space complexity is O(3N) - 3 arrays
 def arrayOfProducts(array):
     # generate what would ne the original left array as output array products.
