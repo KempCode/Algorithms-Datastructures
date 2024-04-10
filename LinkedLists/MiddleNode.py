@@ -33,6 +33,9 @@ def middleNode(linkedList):
 # Also O(n) time and O(1) space
 # However having one slow pointer and one fast pointer that moves at double speed.
 # When fast pointer reaches end slow pointer will be at middle
+
+#Added alternate solution using a fast and a slow pointer. 
+#fast pointer ends on last element in odd len LL and fast pointer ends on one past last element of even len LL
 class LinkedList:
     def __init__(self, value):
         self.value = value
