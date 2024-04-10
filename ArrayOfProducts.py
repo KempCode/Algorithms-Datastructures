@@ -47,4 +47,31 @@ def arrayOfProducts(array):
     return products
 
 
+# Even better solution saving on time complexity
+# time complexity is O(3N) space complexity is O(3N) - 3 arrays
+def arrayOfProducts(array):
+    # generate what would ne the original left array as output array products.
+    # then go through right array multiplying every value in products
+    # saves us space complexity. 
+
+    products = [1 for _ in range(len(array))]
+
+    # fill left array
+    left_product = 1
+    for i in range(len(array)):
+        products[i] = left_product
+        left_product *= array[i]
+
+    # fill right array
+    right_product = 1
+    for i in reversed(range(len(array))):
+        products[i] *= right_product
+        right_product *= array[i]
+
+    return products
+
+    
+
+
+    
 
