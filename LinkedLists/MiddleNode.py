@@ -29,7 +29,27 @@ def middleNode(linkedList):
     return middle_node
        
     
+# Alternate solution
+# Also O(n) time and O(1) space
+# However having one slow pointer and one fast pointer that moves at double speed.
+# When fast pointer reaches end slow pointer will be at middle
+class LinkedList:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
+
+def middleNode(linkedList):
+    slow_pointer = linkedList
+    fast_pointer = linkedList
+
+    # have also to check fast_pointer.next is not None because in odd len LL we want to end there.
+    # and not go one more... Draw this out, it will make sense
+    while(fast_pointer is not None and fast_pointer.next is not None):
+        slow_pointer = slow_pointer.next
+        fast_pointer = fast_pointer.next.next
+    return slow_pointer
+    
 
 
 
