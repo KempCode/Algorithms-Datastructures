@@ -1,6 +1,6 @@
 # O(N*M) O(k), where k is the number of unique characters in all strings combined
 def commonCharacters(strings):
-    # first get all the unique characters from each string
+    # first get all the unique characters from each string.
     # this was my original way. less efficient
     #unique = []
     #for i in range(len(strings)):
