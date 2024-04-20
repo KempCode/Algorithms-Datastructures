@@ -9,7 +9,7 @@ def findClosestValueInBst(tree, target):
             closest = tree.value
         # ^ else closest remains same.
 
-        # find next value
+        # find next value.
         # if current node is less than target go right
         elif tree.value < target:
             tree = tree.right
