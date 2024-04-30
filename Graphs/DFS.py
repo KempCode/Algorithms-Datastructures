@@ -1,7 +1,7 @@
 # Do not edit the class below except
 # for the depthFirstSearch method.
 # Feel free to add new properties
-# and methods to the class.
+# and methods to the class please
 class Node:
     def __init__(self, name):
         self.children = []
