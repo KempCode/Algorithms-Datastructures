@@ -13,5 +13,6 @@ def permutations_helper(array, i, output):
             permutations_helper(array, i + 1, output)
             array[i], array[j] = array[j], array[i]  # backtrack
 
-# Test the function
+# Function test
 print(getPermutations([1, 2, 3]))
+print(getPermutations([1, 5, 6, 7, 9]))
