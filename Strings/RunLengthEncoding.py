@@ -1,4 +1,4 @@
-# O(N) time O(N) space
+# O(N) time O(N) space best complexity
 def runLengthEncoding(string):
     output = ""
     run_counter = 1
@@ -16,7 +16,7 @@ def runLengthEncoding(string):
             output += string[i]
             run_counter = 1  # reset run counter for the next run
         else:
-            # If current character is same as the next one, increment the run counter
+            # If current character is same as the next one increment the run counter
             run_counter += 1
 
     return output
