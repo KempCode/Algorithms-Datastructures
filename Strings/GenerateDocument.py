@@ -1,3 +1,4 @@
+# O(n + m) time and O(C) space where C is no. of unique chars
 def generateDocument(characters, document):
     # Can only generate document if frequency of unique chars in characters is >= those in document string
     character_count = {}
