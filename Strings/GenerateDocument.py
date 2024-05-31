@@ -10,7 +10,7 @@ def generateDocument(characters, document):
         if char in character_count:
             if character_count[char] > 0:
                 character_count[char] = character_count[char] - 1
-            else:
+            else:g
                 return False
         else:
             return False            
