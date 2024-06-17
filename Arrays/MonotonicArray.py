@@ -10,7 +10,7 @@ def isIncreasing(array):
             return False
 
 def isMonotonic(array):
-    # Edge cases of empty array and single digit
+    # Edge cases of empty array and single digit.
     if(len(array) == 0 or len(array) == 1):
         return True
     # if it is monotonic - its entirely non increasing 
